@@ -1,12 +1,93 @@
-img {
-    width: 500px;
-    height: 500px;
-    border: 2px;
-    border-style: solid;
-    border-color: goldenrod;
-    border-radius: 50%;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
-aside {
-    margin-top: 50px;
-    float: right;
+ 
+body {
+  background: #fff;
+  color: #222;
+}
+ 
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+ 
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+ 
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+ 
+nav a.active {
+  border-bottom: 2px solid #f5368f;
+  color: #f5368f;
+}
+ 
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 60px;
+}
+ 
+.text-content h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+ 
+.text-content h2 span {
+  color: #005eeb;
+}
+ 
+.text-content h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+ 
+.btn {
+  background: #f02020;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+ 
+.btn:hover {
+  opacity: 0.85;
+}
+ 
+.social-icons a {
+  margin-right: 15px;
+  font-size: 20px;
+  color: #333;
+  transition: 0.3s;
+}
+ 
+.social-icons a:hover {
+  color: #a020f0;
+}
+ 
+/* Image */
+.img-content img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
 }
